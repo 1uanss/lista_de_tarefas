@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@400;700 & display =swap');
+
+:root {
+    --primary-color: #146C94;
+    --primary-color-dark: #000000;
+    --primary-color-hover: #19A7CE;
+    --primary-color-active: #0a7391;
+    --secund-color: #F6F1F1;
+
+}
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    border-radius: 10px;
+    width: 50rem;
+    margin: 50px auto;
+    background-color: var(--secund-color);
+    padding: 20px;
+}
+
+p input,
+p button {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+p input {
+    height: 50px;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+p button {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secund-color);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    margin-left: 20px;
+}
+
+p button:hover {
+    transition: 1s;
+    background-color: var(--primary-color-hover);
+}
+
+p button:active {
+    transition: 1s;
+    background-color: var(--primary-color-active);
+}
